@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/animate.css">  
+</head>
+<body>
+    <!--menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Prog1 web2</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Seleccion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--front-->
+      <div class="d-flex bd-highlight m-2 ">
+        <div class="p-2 w-30 bd-highlight border border-dark">
+            <center>   <img  width="65%" src="img/anuncio1.jpg" alt=""></center>
+         
+        </div>
+        <div class="p-2 w-40  bd-highlight border border-dark">
+            <h2>Front End vs Back-End</h2>
+        <p>
+            El front end es aquello que ven los usuarios e incluye elementos visuales, como botones, casillas de verificación, gráficos y mensajes de texto. Permite a los usuarios interactuar con la aplicación. El back-end son los datos y la infraestructura que permiten que la aplicación funcione.
+        </p></div>
+        <div class="p-2 w-30  bd-highlight border border-dark">
+            <img  width="80%" src="img/anuncio2.jpg" alt="">
+        </div>
+      </div>
+      <!--table-->
+      <div class="d-flex bd-highlight m-2">
+        <div class="p-2 w-100 bd-highlight border border-dark">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Primero</th>
+                    <th scope="col">button</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Aceptar</button>
+                    <button type="button" class="btn btn-outline-success"data-bs-toggle="modal" data-bs-target="#exampleModa2">Editar</button>
+                    <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModa3">Eliminar</button>
+                </td>
+        
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>
+                    <button type="button" class="btn btn-outline-info"data-bs-toggle="modal" data-bs-target="#exampleModal">Aceptar</button>
+                    <button type="button" class="btn btn-outline-success"data-bs-toggle="modal" data-bs-target="#exampleModa2">Editar</button>
+                    <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModa3">Eliminar</button>
+                    </td>
+                 
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Thornton</td>
+                    <td>
+                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Aceptar</button>
+                    <button type="button" class="btn btn-outline-success"data-bs-toggle="modal" data-bs-target="#exampleModa2">Editar</button>
+                    <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModa3">Eliminar</button>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="p-2 w-50  bd-highlight border border-dark">
+            <img src="img/anuncio1.jpg" width="70%" alt="">
+        </div>
+      </div>
+  <!-- Modal aceptar-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">button Aceptar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center><img src="img/aceptar.jpg" alt=""></center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Edita-->
+  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">button Editar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <center><img src="img/editar.png" alt=""></center>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal eliminar-->
+  <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">button Eliminar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <center><img src="img/eliminar.jpg" alt=""></center>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+   
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+</body>
+</html>
